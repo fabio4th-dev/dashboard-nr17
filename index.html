@@ -745,7 +745,7 @@
         
         <footer>
             <p>Dashboard ACWP/BCWP - NR-17 - Desenvolvido para análise de desempenho de projetos</p>
-            <p>Dados referentes ao período de Setembro/2025 a Janeiro/2026</p>
+            <p>Dados referentes ao período de 14 de Setembro de 2025 a 09 de Novembro de 2026</p>
             <div class="developer-signature">
                 Desenvolvido por Fabio Mendes Rodrigues - Planejador - FW Company
             </div>
@@ -1226,21 +1226,30 @@
                     new Chart(comissionamentoPlanCtx, {
                         type: 'doughnut',
                         data: {
-                            labels: ['Testes Elétricos', 'Testes Mecânicos', 'Integração', 'Ajustes Finais'],
+                            labels: ['Ventilador - EC 01', 'Ventilador - EC 02', 'Exaustor 1 - EA 01', 'Exaustor 1 - EA 02'],
                             datasets: [{
                                 label: 'Atividades Planejadas',
-                                data: [30, 25, 35, 10],
-                                backgroundColor: ['#74b9ff', '#00d2d3', '#a29bfe', '#ffeaa7']
+                                data: [25, 25, 25, 25],
+                                backgroundColor: ['#ff6b6b', '#00d2d3af', '#00d2d3', '#ff6b6baf']
                             }]
                         },
                         options: {
-                            ...minimalistConfig,
-                            plugins: {
-                                ...minimalistConfig.plugins,
-                                title: { 
-                                    display: true, 
-                                    text: 'Distribuição das Atividades',
-                                    color: '#ffffff'
+    ...minimalistConfig,
+    plugins: {
+        ...minimalistConfig.plugins,
+        legend: {
+            position: 'left',  // ← LEGENDA NO CANTO ESQUERDO
+            labels: {
+                color: '#ffffff',  // Cor branca para contraste
+                font: {
+                    size: 10
+                }
+            }
+        },
+        title: {
+            display: true,
+            text: 'Distribuição das Atividades',
+            color: '#ffffff'
                                 }
                             }
                         }
