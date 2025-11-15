@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Dashboard ACWP/BCWP - NR-17</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <!-- Franklin Gothic Font -->
@@ -62,36 +62,35 @@
             color: white;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             min-width: 140px;
-            font-family: 'Franklin Gothic Medium',
         }
         
         .fw-logo .company-name {
-    font-size: 29px;
-    font-weight: bold;
-    line-height: 1.1;
-    letter-spacing: 0px;
-    color: #c42020;
-    font-style: italic;
-    text-shadow: 
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000;
-}
+            font-size: 29px;
+            font-weight: bold;
+            line-height: 1.1;
+            letter-spacing: 0px;
+            color: #c42020;
+            font-style: italic;
+            text-shadow: 
+                -1px -1px 0 #000000,
+                1px -1px 0 #000000,
+                -1px 1px 0 #000000,
+                1px 1px 0 #000000;
+        }
 
-.fw-logo .group {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 3px;
-    letter-spacing: 0.5px;
-    opacity: 0.9;
-    color: #c42020;
-    font-style: italic;
-    text-shadow: 
-        -1px -1px 0 #000000,
-        1px -1px 0 #000000,
-        -1px 1px 0 #000000,
-        1px 1px 0 #000000;
+        .fw-logo .group {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 3px;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+            color: #c42020;
+            font-style: italic;
+            text-shadow: 
+                -1px -1px 0 #000000,
+                1px -1px 0 #000000,
+                -1px 1px 0 #000000,
+                1px 1px 0 #000000;
         }
         
         .header-text {
@@ -382,13 +381,13 @@
             </div>
             <div class="summary-card">
                 <div>Desempenho vs Previsto</div>
-                <div class="summary-value positive">+26.18%</div>
+                <div class="summary-value positive">+26.2%</div>
                 <div>Variação positiva</div>
             </div>
             <div class="summary-card">
                 <div>Previsão de Conclusão</div>
-                <div class="summary-value neutral">100%</div>
-                <div>Real Previsto Final</div>
+                <div class="summary-value neutral">09/01/2026</div>
+                <div>Data prevista</div>
             </div>
             <div class="summary-card">
                 <div>Componentes Concluídos</div>
@@ -439,10 +438,10 @@
                 
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Real Previsto vs Realizado (%)</div>
+                        <div class="card-title">Evolução Semanal por Componente</div>
                     </div>
                     <div class="chart-container">
-                        <canvas id="forecastChart"></canvas>
+                        <canvas id="weeklyEvolutionChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -469,9 +468,9 @@
                             <tr>
                                 <td><strong>NR-17 (Geral)</strong></td>
                                 <td>100%</td>
-                                <td>41.90%</td>
+                                <td>41.7%</td>
                                 <td>68.1%</td>
-                                <td>+26.18%</td>
+                                <td>+26.2%</td>
                                 <td>100%</td>
                                 <td>
                                     <div style="background: #2d3436; border-radius: 10px; height: 10px; width: 100%;">
@@ -484,9 +483,9 @@
                             <tr>
                                 <td><strong>Engenharia</strong></td>
                                 <td>20%</td>
-                                <td>54.04%</td>
+                                <td>56.2%</td>
                                 <td>40%</td>
-                                <td>-14.04%</td>
+                                <td>-16.2%</td>
                                 <td>100%</td>
                                 <td>
                                     <div style="background: #2d3436; border-radius: 10px; height: 10px; width: 100%;">
@@ -514,15 +513,15 @@
                             <tr>
                                 <td><strong>Construção e Montagem</strong></td>
                                 <td>54%</td>
-                                <td>17.36%</td>
-                                <td>54.81%</td>
-                                <td>+37.45%</td>
+                                <td>29%</td>
+                                <td>74.3%</td>
+                                <td>+45.3%</td>
                                 <td>100%</td>
                                 <td>
                                     <div style="background: #2d3436; border-radius: 10px; height: 10px; width: 100%;">
-                                        <div style="background: #74b9ff; height: 10px; border-radius: 10px; width: 54.81%;"></div>
+                                        <div style="background: #74b9ff; height: 10px; border-radius: 10px; width: 74.3%;"></div>
                                     </div>
-                                    <span class="percentage-badge badge-neutral">54.81%</span>
+                                    <span class="percentage-badge badge-neutral">74.3%</span>
                                 </td>
                                 <td class="positive">Adiantado</td>
                             </tr>
@@ -530,14 +529,14 @@
                                 <td><strong>Comissionamento</strong></td>
                                 <td>8%</td>
                                 <td>0%</td>
-                                <td>25%</td>
-                                <td>+25%</td>
+                                <td>62.5%</td>
+                                <td>+62.5%</td>
                                 <td>100%</td>
                                 <td>
                                     <div style="background: #2d3436; border-radius: 10px; height: 10px; width: 100%;">
-                                        <div style="background: #00d2d3; height: 10px; border-radius: 10px; width: 25%;"></div>
+                                        <div style="background: #00d2d3; height: 10px; border-radius: 10px; width: 62.5%;"></div>
                                     </div>
-                                    <span class="percentage-badge badge-positive">25%</span>
+                                    <span class="percentage-badge badge-positive">62.5%</span>
                                 </td>
                                 <td class="positive">Adiantado</td>
                             </tr>
@@ -566,7 +565,7 @@
         <div id="nr17-component" class="component-section">
             <div class="component-header">
                 <h2>NR-17 (Geral) - Análise Detalhada</h2>
-                <p>Progresso: 68.1% | Status: Adiantado</p>
+                <p>Progresso: 68.1% | Status: Adiantado | Desvio: +26.2%</p>
             </div>
             <div class="dashboard-grid">
                 <div class="card">
@@ -593,7 +592,7 @@
         <div id="engenharia-component" class="component-section">
             <div class="component-header">
                 <h2>Engenharia - Análise Detalhada</h2>
-                <p>Progresso: 40% | Status: Atrasado</p>
+                <p>Progresso: 40% | Status: Atrasado | Desvio: -16.2%</p>
             </div>
             <div class="dashboard-grid">
                 <div class="card">
@@ -647,7 +646,7 @@
         <div id="construcao-component" class="component-section">
             <div class="component-header">
                 <h2>Construção e Montagem - Análise Detalhada</h2>
-                <p>Progresso: 54.81% | Status: Adiantado</p>
+                <p>Progresso: 74.3% | Status: Adiantado | Desvio: +45.3%</p>
             </div>
             <div class="dashboard-grid">
                 <div class="card">
@@ -674,7 +673,7 @@
         <div id="comissionamento-component" class="component-section">
             <div class="component-header">
                 <h2>Comissionamento - Análise Detalhada</h2>
-                <p>Progresso: 25% | Status: Adiantado</p>
+                <p>Progresso: 62.5% | Status: Adiantado | Desvio: +62.5%</p>
             </div>
             <div class="dashboard-grid">
                 <div class="card">
@@ -744,7 +743,7 @@
         
         <footer>
             <p>Dashboard ACWP/BCWP - NR-17 - Desenvolvido para análise de desempenho de projetos</p>
-            <p>Dados referentes ao período de 14 de Setembro de 2025 a 09 de Novembro de 2026</p>
+            <p>Dados referentes ao período de 15 de Setembro de 2025 a 09 de Janeiro de 2026</p>
             <div class="developer-signature">
                 Desenvolvido por Fabio Mendes Rodrigues - Planejador - FW Company
             </div>
@@ -752,49 +751,80 @@
     </div>
 
     <script>
-        // Datas para os gráficos - Convertendo números de série do Excel para datas
-        const excelNumbers = [45914, 45921, 45928, 45935, 45942, 45949, 45956, 45963, 45970, 45977, 45984, 45991, 45998, 46005, 46012, 46019, 46026, 46033];
-        const dates = excelNumbers.map(num => {
-            const date = new Date((num - 25569) * 86400 * 1000);
-            return date.toLocaleDateString('pt-BR');
-        });
+        // Datas para os gráficos - Baseado no período do projeto
+        const dates = [
+            '15/09/2025', '22/09/2025', '29/09/2025', '06/10/2025', 
+            '13/10/2025', '20/10/2025', '27/10/2025', '03/11/2025', 
+            '10/11/2025', '17/11/2025', '24/11/2025', '01/12/2025', 
+            '08/12/2025', '15/12/2025', '22/12/2025', '29/12/2025',
+            '05/01/2026', '09/01/2026'
+        ];
 
-        // Dados reais do CSV - Convertendo para percentuais (multiplicando por 100)
-        const plannedPercent = [0.1525, 0.20537, 0.21766, 0.23303, 0.24532, 0.28083, 0.31634, 0.35185, 0.41902, 0.47157, 0.57249, 0.75667, 0.81, 0.878, 0.97, 0.98, 1, 1].map(val => val * 100);
-        const actualPercent = [0.14, 0.14, 0.14, 0.14, 0.14, 0.27, 0.432, 0.546, 0.681, 0, 0, 0, 0, 0, 0, 0, 0, 0].map(val => val * 100);
-        const realPrevistoPercent = [0.14, 0.14, 0.14, 0.14, 0.14, 0.14, 0.27, 0.432, 0.546, 0.681, 0.47157, 0.57249, 0.75667, 0.81, 0.878, 0.97, 0.98, 1].map(val => val * 100);
+        // Dados reais do CSV - Evolução semanal baseada nos dados do CSV
+        const plannedPercent = [0, 15.3, 20.5, 21.8, 23.3, 24.5, 28.1, 31.6, 33.2, 34.5, 35.0, 35.1, 35.1, 35.1, 35.18, 35.18, 35.18, 41.7];
+        const actualPercent = [0, 14.0, 14.0, 14.0, 14.0, 14.0, 27.0, 43.2, 46.5, 48.2, 50.1, 51.8, 52.9, 53.5, 54.0, 54.6, 68.1, 68.1];
+        const realPrevistoPercent = [0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 27.0, 43.2, 46.5, 48.2, 50.1, 51.8, 52.9, 53.5, 54.0, 54.6, 100];
 
-        // Dados específicos por componente - ATUALIZADOS COM DADOS REAIS
+        // Dados de evolução semanal por componente baseados no CSV
+        const weeklyData = {
+            dates: ['02/10', '26/10', '02/11', '09/11', '16/12'],
+            nr17: [0, 0, 43, 0, 0],
+            engenharia: [0, 0, 40, 0, 0],
+            fornecimento: [0, 0, 100, 0, 0],
+            construcao: [20, 80, 37, 0, 0],
+            comissionamento: [0, 25, 0, 0, 0],
+            operacao: [0, 0, 0, 0, 0]
+        };
+
+        // Dados específicos por componente - ATUALIZADOS COM DADOS REAIS DO CSV
         const componentData = {
             nr17: {
-                planned: [0.1525, 0.20537, 0.21766, 0.23303, 0.24532, 0.28083, 0.31634, 0.35185, 0.41902, 0.47157, 0.57249, 0.75667, 0.81, 0.878, 0.97, 0.98, 1, 1].map(val => val * 100),
-                actual: [0.14, 0.14, 0.14, 0.14, 0.14, 0.27, 0.432, 0.546, 0.681, 0, 0, 0, 0, 0, 0, 0, 0, 0].map(val => val * 100),
-                color: '#74b9ff'
+                planned: [0, 15.3, 20.5, 21.8, 23.3, 24.5, 28.1, 31.6, 33.2, 34.5, 35.0, 35.1, 35.1, 35.1, 35.18, 35.18, 35.18, 41.7],
+                actual: [0, 14.0, 14.0, 14.0, 14.0, 14.0, 27.0, 43.2, 46.5, 48.2, 50.1, 51.8, 52.9, 53.5, 54.0, 54.6, 68.1, 68.1],
+                color: '#74b9ff',
+                current: 68.1,
+                plannedCurrent: 41.7,
+                deviation: '+26.2%'
             },
             engenharia: {
-                planned: [40.0, 45.0, 48.0, 50.0, 51.0, 52.0, 53.0, 53.5, 54.0, 54.04, 54.04, 54.04, 54.04, 54.04, 54.04, 54.04, 54.04, 54.04],
-                actual: [40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0],
-                color: '#00d2d3'
+                planned: [0, 10, 20, 30, 40, 45, 48, 50, 51, 52, 53, 53.5, 54, 54.04, 54.04, 54.04, 54.04, 56.2],
+                actual: [0, 10, 15, 20, 25, 30, 35, 38, 39, 40, 40, 40, 40, 40, 40, 40, 40, 40],
+                color: '#00d2d3',
+                current: 40,
+                plannedCurrent: 56.2,
+                deviation: '-16.2%'
             },
             fornecimento: {
-                planned: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
-                actual: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
-                color: '#a29bfe'
+                planned: [0, 25, 50, 75, 90, 95, 98, 99, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
+                actual: [0, 25, 50, 75, 90, 95, 98, 99, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
+                color: '#a29bfe',
+                current: 100,
+                plannedCurrent: 100,
+                deviation: '0%'
             },
             construcao: {
-                planned: [0, 0, 0, 5.0, 8.0, 10.0, 12.0, 14.0, 15.5, 16.5, 17.0, 17.2, 17.3, 17.35, 17.36, 17.36, 17.36, 17.36],
-                actual: [0, 0, 0, 10.0, 20.0, 35.0, 45.0, 48.0, 50.5, 52.0, 53.0, 53.8, 54.2, 54.5, 54.81, 54.81, 54.81, 54.81],
-                color: '#ffeaa7'
+                planned: [0, 0, 0, 5, 8, 10, 12, 14, 15.5, 16.5, 17, 17.2, 17.3, 17.35, 17.36, 17.36, 17.36, 29],
+                actual: [0, 0, 0, 10, 20, 35, 45, 48, 50.5, 52, 53, 53.8, 54.2, 54.5, 54.81, 54.81, 74.3, 74.3],
+                color: '#ffeaa7',
+                current: 74.3,
+                plannedCurrent: 29,
+                deviation: '+45.3%'
             },
             comissionamento: {
-                planned: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 100, 100],
-                actual: [0, 0, 0, 0, 0, 0, 10.0, 15.0, 18.0, 20.0, 22.0, 23.5, 24.2, 24.6, 25.0, 25.0, 25.0, 25.0],
-                color: '#ff6b6b'
+                planned: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                actual: [0, 0, 0, 0, 0, 0, 10, 15, 18, 20, 22, 23.5, 24.2, 24.6, 25, 25, 62.5, 62.5],
+                color: '#ff6b6b',
+                current: 62.5,
+                plannedCurrent: 0,
+                deviation: '+62.5%'
             },
             operacao: {
                 planned: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 actual: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                color: '#b2bec3'
+                color: '#b2bec3',
+                current: 0,
+                plannedCurrent: 0,
+                deviation: '0%'
             }
         };
 
@@ -898,16 +928,16 @@
             new Chart(comparisonCtx, {
                 type: 'bar',
                 data: {
-                    labels: dates.slice(0, 9),
+                    labels: dates.slice(0, 12),
                     datasets: [
                         {
                             label: 'Previsto (%)',
-                            data: plannedPercent.slice(0, 9),
+                            data: plannedPercent.slice(0, 12),
                             backgroundColor: 'rgba(116, 185, 255, 0.7)'
                         },
                         {
                             label: 'Realizado (%)',
-                            data: actualPercent.slice(0, 9),
+                            data: actualPercent.slice(0, 12),
                             backgroundColor: 'rgba(0, 210, 211, 0.7)'
                         }
                     ]
@@ -942,9 +972,9 @@
             new Chart(performanceCtx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['NR-17 (68.1%)', 'Engenharia (40%)', 'Fornecimento (100%)', 'Construção (54.81%)', 'Comissionamento (25%)', 'Operação (0%)'],
+                    labels: ['NR-17 (68.1%)', 'Engenharia (40%)', 'Fornecimento (100%)', 'Construção (74.3%)', 'Comissionamento (62.5%)', 'Operação (0%)'],
                     datasets: [{
-                        data: [68.1, 40, 100, 54.81, 25, 0],
+                        data: [68.1, 40, 100, 74.3, 62.5, 0],
                         backgroundColor: ['#74b9ff', '#00d2d3', '#a29bfe', '#ffeaa7', '#ff6b6b', '#b2bec3'],
                         borderWidth: 0
                     }]
@@ -963,30 +993,51 @@
                 }
             });
 
-            // Gráfico de Real Previsto vs Realizado
-            const forecastCtx = document.getElementById('forecastChart').getContext('2d');
-            new Chart(forecastCtx, {
+            // Novo Gráfico: Evolução Semanal por Componente
+            const weeklyCtx = document.getElementById('weeklyEvolutionChart').getContext('2d');
+            new Chart(weeklyCtx, {
                 type: 'line',
                 data: {
-                    labels: dates,
+                    labels: weeklyData.dates,
                     datasets: [
                         {
-                            label: 'Real Acumulado (%)',
-                            data: actualPercent,
-                            borderColor: '#00d2d3',
-                            backgroundColor: 'rgba(0, 210, 211, 0.1)',
+                            label: 'NR-17',
+                            data: weeklyData.nr17,
+                            borderColor: '#74b9ff',
                             borderWidth: 3,
-                            fill: true,
+                            fill: false,
                             tension: 0.4
                         },
                         {
-                            label: 'Real Previsto (%)',
-                            data: realPrevistoPercent,
+                            label: 'Engenharia',
+                            data: weeklyData.engenharia,
+                            borderColor: '#00d2d3',
+                            borderWidth: 3,
+                            fill: false,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Fornecimento',
+                            data: weeklyData.fornecimento,
+                            borderColor: '#a29bfe',
+                            borderWidth: 3,
+                            fill: false,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Construção',
+                            data: weeklyData.construcao,
+                            borderColor: '#ffeaa7',
+                            borderWidth: 3,
+                            fill: false,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Comissionamento',
+                            data: weeklyData.comissionamento,
                             borderColor: '#ff6b6b',
-                            backgroundColor: 'rgba(255, 107, 107, 0.1)',
-                            borderWidth: 2,
-                            borderDash: [5, 5],
-                            fill: true,
+                            borderWidth: 3,
+                            fill: false,
                             tension: 0.4
                         }
                     ]
@@ -997,21 +1048,19 @@
                         ...minimalistConfig.plugins,
                         title: { 
                             display: true, 
-                            text: 'Comparação entre Realizado e Real Previsto (%)',
+                            text: 'Evolução Semanal por Componente',
                             color: '#ffffff'
                         }
                     },
                     scales: {
                         ...minimalistConfig.scales,
-                        y: {
+                        y: { 
                             ...minimalistConfig.scales.y,
                             beginAtZero: true,
                             max: 100,
-                            ticks: {
+                            ticks: { 
                                 ...minimalistConfig.scales.y.ticks,
-                                callback: function(value) {
-                                    return value + '%';
-                                }
+                                callback: value => value + '%' 
                             }
                         }
                     }
@@ -1076,13 +1125,12 @@
             // Gráfico de Performance (para componentes com dados)
             const performanceCtx = document.getElementById(componentId + 'PerformanceChart')?.getContext('2d');
             if (performanceCtx) {
-                const currentProgress = data.actual[data.actual.length - 1] || 0;
                 new Chart(performanceCtx, {
                     type: 'doughnut',
                     data: {
                         labels: ['Concluído', 'Restante'],
                         datasets: [{
-                            data: [currentProgress, 100 - currentProgress],
+                            data: [data.current, 100 - data.current],
                             backgroundColor: [data.color, '#2d3436'],
                             borderWidth: 0
                         }]
@@ -1093,7 +1141,7 @@
                             ...minimalistConfig.plugins,
                             title: { 
                                 display: true, 
-                                text: 'Percentual Concluído',
+                                text: 'Percentual Concluído - ' + data.deviation,
                                 color: '#ffffff'
                             }
                         },
@@ -1112,7 +1160,7 @@
                             labels: ['Set/25', 'Out/25', 'Nov/25', 'Dez/25'],
                             datasets: [{
                                 label: 'Fornecimento Concluído (%)',
-                                data: [100, 100, 100, 100],
+                                data: [25, 75, 100, 100],
                                 backgroundColor: data.color
                             }]
                         },
@@ -1147,10 +1195,10 @@
                     new Chart(progressCtx, {
                         type: 'bar',
                         data: {
-                            labels: ['Fundação', 'Estrutura', 'Instalações', 'Acabamento'],
+                            labels: ['Encaminhamentos', 'Lançamento Cabos', 'Ligações', 'Painel', 'Gaveta Siplux'],
                             datasets: [{
                                 label: 'Progresso Atual (%)',
-                                data: [85, 65, 45, 25],
+                                data: [100, 100, 75, 10, 30],
                                 backgroundColor: data.color
                             }]
                         },
@@ -1181,15 +1229,77 @@
                     break;
 
                 case 'comissionamento':
+                    // Gráfico de Evolução CORRIGIDO para Comissionamento
+                    const comissionamentoEvolutionCtx = document.getElementById('comissionamentoEvolutionChart').getContext('2d');
+                    if (comissionamentoEvolutionCtx) {
+                        // Datas específicas para comissionamento incluindo o início real 05/11
+                        const comissionamentoDates = [
+                            '05/11/2025', '12/11/2025', '19/11/2025', '26/11/2025', 
+                            '03/12/2025', '10/12/2025', '17/12/2025', '23/12/2025',
+                            '30/12/2025', '06/01/2026', '09/01/2026'
+                        ];
+                        
+                        const comissionamentoPlanned = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100];
+                        const comissionamentoActual = [0, 25, 25, 25, 25, 25, 25, 62.5, 62.5, 62.5, 62.5];
+                        
+                        new Chart(comissionamentoEvolutionCtx, {
+                            type: 'line',
+                            data: {
+                                labels: comissionamentoDates,
+                                datasets: [
+                                    {
+                                        label: 'Previsto (%) - Início: 23/12/2025',
+                                        data: comissionamentoPlanned,
+                                        borderColor: data.color,
+                                        borderWidth: 3,
+                                        fill: false,
+                                        tension: 0.4
+                                    },
+                                    {
+                                        label: 'Realizado (%) - Início: 05/11/2025',
+                                        data: comissionamentoActual,
+                                        borderColor: '#00d2d3',
+                                        borderWidth: 3,
+                                        fill: false,
+                                        tension: 0.4
+                                    }
+                                ]
+                            },
+                            options: {
+                                ...minimalistConfig,
+                                plugins: {
+                                    ...minimalistConfig.plugins,
+                                    title: { 
+                                        display: true, 
+                                        text: 'Evolução Comissionamento - Previsto vs Realizado',
+                                        color: '#ffffff'
+                                    }
+                                },
+                                scales: {
+                                    ...minimalistConfig.scales,
+                                    y: { 
+                                        ...minimalistConfig.scales.y,
+                                        beginAtZero: true,
+                                        max: 100,
+                                        ticks: { 
+                                            ...minimalistConfig.scales.y.ticks,
+                                            callback: value => value + '%' 
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }
+
                     // Gráfico de Progresso do Comissionamento
                     const comissionamentoProgressCtx = document.getElementById('comissionamentoProgressChart').getContext('2d');
                     new Chart(comissionamentoProgressCtx, {
                         type: 'bar',
                         data: {
-                            labels: ['Out/25', 'Nov/25', 'Dez/25', 'Jan/26'],
+                            labels: ['Ventilador EC-01', 'Ventilador EC-02', 'Exaustor EA-01', 'Exaustor EA-02'],
                             datasets: [{
                                 label: 'Progresso Comissionamento (%)',
-                                data: [10, 15, 20, 25],
+                                data: [75, 75, 75, 25],
                                 backgroundColor: data.color
                             }]
                         },
@@ -1199,7 +1309,7 @@
                                 ...minimalistConfig.plugins,
                                 title: { 
                                     display: true, 
-                                    text: 'Progresso do Comissionamento',
+                                    text: 'Progresso por Equipamento',
                                     color: '#ffffff'
                                 }
                             },
@@ -1223,7 +1333,7 @@
                     new Chart(comissionamentoPlanCtx, {
                         type: 'doughnut',
                         data: {
-                            labels: ['Ventilador - EC 01', 'Ventilador - EC 02', 'Exaustor 1 - EA 01', 'Exaustor 1 - EA 02'],
+                            labels: ['Ventilador - EC 01', 'Ventilador - EC 02', 'Exaustor 1 - EA 01', 'Exaustor 2 - EA 02'],
                             datasets: [{
                                 label: 'Atividades Planejadas',
                                 data: [25, 25, 25, 25],
@@ -1231,22 +1341,22 @@
                             }]
                         },
                         options: {
-    ...minimalistConfig,
-    plugins: {
-        ...minimalistConfig.plugins,
-        legend: {
-            position: 'left',
-            labels: {
-                color: '#ffffff',
-                font: {
-                    size: 10
-                }
-            }
-        },
-        title: {
-            display: true,
-            text: 'Distribuição das Atividades',
-            color: '#ffffff'
+                            ...minimalistConfig,
+                            plugins: {
+                                ...minimalistConfig.plugins,
+                                legend: {
+                                    position: 'left',
+                                    labels: {
+                                        color: '#ffffff',
+                                        font: {
+                                            size: 10
+                                        }
+                                    }
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Distribuição das Atividades',
+                                    color: '#ffffff'
                                 }
                             }
                         }
@@ -1257,11 +1367,11 @@
                     new Chart(comissionamentoForecastCtx, {
                         type: 'line',
                         data: {
-                            labels: ['Dez/25', 'Jan/26'],
+                            labels: ['Nov/25', 'Dez/25', 'Jan/26'],
                             datasets: [
                                 {
                                     label: 'Previsão de Conclusão (%)',
-                                    data: [20, 100],
+                                    data: [25, 50, 100],
                                     borderColor: data.color,
                                     borderWidth: 3,
                                     fill: false,
@@ -1269,7 +1379,7 @@
                                 },
                                 {
                                     label: 'Meta Original (%)',
-                                    data: [0, 100],
+                                    data: [0, 0, 100],
                                     borderColor: '#b2bec3',
                                     borderWidth: 2,
                                     borderDash: [5, 5],
@@ -1284,7 +1394,7 @@
                                 ...minimalistConfig.plugins,
                                 title: { 
                                     display: true, 
-                                    text: 'Previsão de Conclusão - Final em 11/01/2026',
+                                    text: 'Previsão de Conclusão - Final em 23/12/2025',
                                     color: '#ffffff'
                                 }
                             },
@@ -1323,7 +1433,7 @@
                                 ...minimalistConfig.plugins,
                                 title: { 
                                     display: true, 
-                                    text: 'Cronograma de Encerramento - Início Dez/25 - Término 11/01/26',
+                                    text: 'Cronograma de Encerramento - Início 29/12/25 - Término 09/01/26',
                                     color: '#ffffff'
                                 }
                             },
